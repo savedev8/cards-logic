@@ -1,0 +1,187 @@
+.card {
+    width: 172px;
+    height: 162px;
+    border: 1px solid #cececf;
+    border-radius: 4px;
+    margin-right: 12px;
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        max-width: 550px;
+    }
+    &-title {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 17.25px;
+        color: #2c3143;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 12px;
+    }
+    &-info {
+        margin-bottom: 10px;
+        span {
+            display: block;
+            color: #969bae;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            margin-left: 12px;
+        }
+    }
+    &-price {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 26.25px;
+        color: #969fbf;
+        margin-bottom: 5px;
+        margin-left: 12px;
+        span {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+        }
+    }
+    &-link {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 13.75px;
+        color: #205eff;
+        margin-left: 12px;
+    }
+}
+.plan {
+    &-inner {
+        margin-left: 30px;
+    }
+    &-title {
+        margin-top: 21px;
+        margin-bottom: 7px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 17.5px;
+        color: #6773a0;
+    }
+
+    &-progress {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 0px;
+    }
+
+    &-navigation {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    &-button {
+        background-color: #205eff;
+        border-radius: 4px;
+        margin-right: 14px;
+        a {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 39px;
+            padding: 13px 25px;
+            color: #f4f7ff;
+            text-decoration: none;
+        }
+    }
+
+    &-progress {
+        display: flex;
+        flex-direction: column;
+        margin-left: 250px;
+        margin-top: 0px;
+    }
+
+    &-progress__title {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16.25px;
+        color: #76757e;
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+            color: #2c3143;
+            float: right;
+        }
+    }
+}
+
+.active {
+    border: 3px solid #205eff;
+}
+
+.actives {
+    color: #205eff;
+}
+
+// .block {
+//     display: block;
+// }
+
+.border-block {
+    border: 1px solid #ec5a75;
+}
+
+// .plan {
+//     &-slots {
+//         margin-bottom: 48px;
+//         a {
+//             text-decoration: none;
+//         }
+//     }
+
+//     &-number {
+//         display: inline-block;
+//         user-select: none;
+//         position: relative;
+//         text-align: left;
+//         padding: 0;
+//         width: 79px;
+//         border: 1px solid #ddd;
+//         height: 42px;
+//         border-radius: 4px;
+
+//     }
+
+//     &-number__controls {
+//         position: absolute;
+//         top: 2px;
+//         right: 0px;
+//         width: 30px;
+//     }
+
+//     &-number__minus {
+//         display: block;
+//         color: #969BAE;
+//         border: none;
+//         background-color: #fff;
+//         margin-left: -3px;
+//         padding-left: 10px;
+//         font-size: 18px;
+//     }
+//     &-number__plus {
+//         display: block;
+//         color: #969BAE;
+//         border: none;
+//         background-color: #fff;
+//     }
+
+//     &-number__text {
+//         display: flex;
+//         font-size: 13px;
+//         font-weight: 500;
+//         line-height: 16.25px;
+//         color: #969BAE;
+//         margin-top: 12px;
+//         margin-left: 20px;
+//         width: 49px;
+//         height: 42px;
+//         position: absolute;
+//     }
+// }

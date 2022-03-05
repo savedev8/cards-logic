@@ -1,0 +1,29 @@
+
+  [
+        {
+            "id" : "1",
+            "name" : "Стандарт",
+            "countries" : "59 стран ГЕО",
+            "itemCost" : "$79",
+            "cost" : "$99",
+            "minItems" : "20"
+        },
+
+        {
+            "id" : "2",
+            "name" : "Стандарт+",
+            "countries" : "74 стран ГЕО",
+            "itemCost" : "$99",
+            "cost" : "$165",
+            "minItems" : "15"
+        },
+
+        {
+            "id" : "3",
+            "name" : "Премиум",
+            "countries" : "90 стран ГЕО",
+            "itemCost" : "$119",
+            "cost" : "$379",
+            "minItems" : "10"
+        }
+    ]

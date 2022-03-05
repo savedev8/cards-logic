@@ -1,0 +1,106 @@
+.request {
+    margin-left: 16px;
+    margin-right: 22px;
+    &-title {
+        margin-top: 21px;
+        margin-bottom: 12px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 17.5px;
+        color: #6773A0;
+    }
+    &-price {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #9B99AE;
+        float: right;
+        margin-top: 220px;
+        span {
+            margin-left: 3px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17px;
+            color: #34324F;
+        }
+    }
+
+    &-balance {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 150px;
+        span {
+            display: block;
+        }
+    }
+
+    &-score {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #9B99AE;
+        margin-top: 0;
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17.5px;
+            color: #34324F;
+            text-align: right;
+        }
+    }
+
+    &-button {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 39px;
+       
+        margin-right: 0px;
+        a {
+            background-color: #205EFF;
+            border-radius: 4px;
+            padding: 13px 20px;
+            text-decoration: none;
+            color: #F4F7FF;
+        }
+    }
+
+    &-info {
+        width: 209px;
+        height: 149px;
+        
+        &__item {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+            color: #34324F;
+            text-align: start;
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                float: right; 
+                color: #34324F;
+                &.blue {
+                    color: #205EFF;
+                }
+            }
+            
+            p {
+                display: block;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 13.75px;
+                color: #9B99AE;
+                margin-top: 3px;
+            }
+        }
+
+        
+
+        
+
+    
+
+       
+    }
+}
