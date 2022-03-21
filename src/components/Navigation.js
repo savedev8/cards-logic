@@ -1,12 +1,13 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 // import './Navigation.scss'
 
 function Navigation() {
     return (
         <section className='plan-navigation'>
             <div className='nav__button'>
-                <Button variant='primary'>Продолжить</Button>
+                <Link as={Button} to='subscribe' className='btn btn-primary'>Продолжить</Link>
             </div>
 
             <div className='plan-progress'>

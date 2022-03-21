@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Plan.scss'
 // import './Counter.scss'
 
-import data from '../data/data.json'
+// import data from '../data/data.json'
 import styled from 'styled-components'
 import { Button, Card, CardGroup, Container } from 'react-bootstrap'
 import Navigation from '../components/Navigation'
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllData } from '../store/slices/dataSlice';
 
 export const ModalContainer = styled.div`
     width: 630px;
@@ -15,23 +17,30 @@ export const ModalContainer = styled.div`
 
 const PlanPageOne = () => {
     const [activeId, setActiveId] = useState()
+    const dispatch = useDispatch();
+    const { dataSet } = useSelector((state) => state.dataInfo);
+    const [count, setCount] = useState(0)
+    console.log(dataSet);
     const handleIncrement = () => {
         setCount((prevCount) => prevCount + 1)
     }
     const handleDecrement = () => {
         setCount((prevCount) => prevCount - 1)
     }
-    const [count, setCount] = useState(0)
     const [text, setText] = useState('plan-none')
     const [able, setAble] = useState(false)
+    
+    // useEffect(() => {
+    //     data.map((item) => {
+    //         return activeId !== item.id && count <= item.minItems
+    //             ? setAble(true) && setText('plan-text')
+    //             : setAble(false) && setText('d-none')
+    //     })
+    // })
 
     useEffect(() => {
-        data.map((item) => {
-            return activeId !== item.id && count <= item.minItems
-                ? setAble(true) && setText('plan-text')
-                : setAble(false) && setText('d-none')
-        })
-    })
+        dispatch(getAllData());
+    }, [dispatch])
 
     return (
         <ModalContainer>
@@ -39,10 +48,10 @@ const PlanPageOne = () => {
                 <h3 className='plan-title'>План подписки</h3>
 
                 <CardGroup className='card-items'>
-                    {data.map((item, index) => (
+                    {dataSet.map((item) => (
                         <Card
                             key={item.id}
-                            className={`h-100 ${
+                            className={`${
                                 activeId === item.id ? 'card active' : 'card'
                             }`}
                             onClick={(e) => {
@@ -50,10 +59,10 @@ const PlanPageOne = () => {
                                 setCount(Number(item.minItems))
                             }}>
                             <Card.Title
-                                className={
-                                    activeId === item.id
-                                        ? 'card-title actives'
-                                        : 'card-title'
+                                className={`card-title
+                                    ${activeId === item.id
+                                        ? 'actives'
+                                        : null}`
                                 }>
                                 {item.name}
                             </Card.Title>
@@ -82,7 +91,7 @@ const PlanPageOne = () => {
                     <div className='plan-in'>
                         <div className='plan-number'>
                             <div className='plan-number__text'>{count}</div>
-                            {data.map((item, id) => (
+                            {/* {data.map((item, id) => ( */}
                                 <div className='plan-number__controls'>
                                     <Button
                                         className='plan-number__plus'
@@ -94,24 +103,25 @@ const PlanPageOne = () => {
                                         disabled={able}
                                         onClick={(e) => {
                                             handleDecrement()
-                                            activeId === item.id &&
-                                            count < item.minItems
+                                            activeId 
+                                            //  &&
+                                            // count < item.minItems
                                                 ? setText('plan-text')
                                                 : setText('plan-none')
                                         }}>
                                         -
                                     </Button>
                                 </div>
-                            ))}
+                            {/* ))} */}
                         </div>
-                        {data.map((item) =>
+                        {/* {data.map((item) =>
                             activeId === item.id ? (
                                 <div className={`${text}`}>
                                     Для оформления выбранного плана необходимо
                                     более {item.minItems} слотов
                                 </div>
                             ) : null
-                        )}
+                        )} */}
                     </div>
                 </section>
                 <Navigation />

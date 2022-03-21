@@ -1,9 +1,16 @@
 .card {
     width: 172px;
-    height: 162px;
-    border: 1px solid #cececf;
+    min-height: 162px;
     border-radius: 4px;
     margin-right: 12px;
+    border: 2px solid #cececf;
+    &.active {
+        border: 2px solid #205eff;
+    }
+    
+    .actives {
+        color: #205eff;
+    }
     &-items {
         display: flex;
         justify-content: space-between;
@@ -112,13 +119,7 @@
     }
 }
 
-.active {
-    border: 3px solid #205eff;
-}
 
-.actives {
-    color: #205eff;
-}
 
 // .block {
 //     display: block;
