@@ -1,30 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import './Req.scss'
 
 const Req = () => {
-    const { dataSet } = useSelector((state) => state.dataInfo);
+    const [ req, setReq ] = useState({a: 'План не выбран', b: '$0', c: '0 слотов', d: '$0.00', e: '$750.00'});
+    console.log(req);
+    const { dataSet } = useSelector((state) => state.dataInfo)
     return (
         <section className='request'>
             <h3 className='plan-title'>Ваш запрос</h3>
             <section className='request-info'>
-            {dataSet.map(item => (
+            {/* {req.map(item => ( */}
                 <div class='request-info__items'>
                     <div class='request-info__item'>
-                        План не выбран <span>{item.cost}</span>
-                        <p>0 слотов</p>
+                        {req.a} <span>{req.b}</span>
+                        <p>{req.c}</p>
                     </div>
 
                     <p className='request-price'>
-                        Итого:<span>$0.00</span>
+                        Итого:<span>{req.d}</span>
                     </p>
             </div>
-            ))}
+            {/* ))} */}
                 </section>
             <div className='request-balance'>
                 <p className='request-score'>
                     Ваш баланс:
-                    <span>$750.00</span>
+                    <span>{req.e}</span>
                 </p>
                 <div className='request-button'>
                     <a href='#header'>Запросить</a>
