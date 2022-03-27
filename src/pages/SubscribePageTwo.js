@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Req from '../components/shared/Req';
 import { ModalContainer } from './PlanPageOne'
 // import './Subscribe.scss'
 

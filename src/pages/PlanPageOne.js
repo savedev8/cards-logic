@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './Plan.scss'
-// import './Counter.scss'
 
-// import data from '../data/data.json'
 import styled from 'styled-components'
 import { Button, Card, CardGroup, Container } from 'react-bootstrap'
 import Navigation from '../components/Navigation'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllData } from '../store/slices/dataSlice';
+import Req from '../components/shared/Req';
 
 export const ModalContainer = styled.div`
     width: 630px;
@@ -43,7 +42,7 @@ const PlanPageOne = () => {
     }, [dispatch])
 
     return (
-        <ModalContainer>
+        <ModalContainer className='d-flex'>
             <Container className='plan-inner'>
                 <h3 className='plan-title'>План подписки</h3>
 
@@ -126,6 +125,7 @@ const PlanPageOne = () => {
                 </section>
                 <Navigation />
             </Container>
+            <Req activeId={ activeId } />
         </ModalContainer>
     )
 };
