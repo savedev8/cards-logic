@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Button, Card, CardGroup, Container } from 'react-bootstrap'
 import Navigation from '../components/Navigation'
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllData } from '../store/slices/dataSlice';
+import { getAllData, refreshActive } from '../store/slices/dataSlice';
 import Req from '../components/shared/Req';
 
 export const ModalContainer = styled.div`
@@ -19,7 +19,6 @@ const PlanPageOne = () => {
     const dispatch = useDispatch();
     const { dataSet } = useSelector((state) => state.dataInfo);
     const [count, setCount] = useState(0)
-    console.log(dataSet);
     const handleIncrement = () => {
         setCount((prevCount) => prevCount + 1)
     }
@@ -55,6 +54,8 @@ const PlanPageOne = () => {
                             }`}
                             onClick={(e) => {
                                 setActiveId(item.id)
+                                dispatch(refreshActive(item.id));
+                                // dispatch(refreshActive(item.minItems));
                                 setCount(Number(item.minItems))
                             }}>
                             <Card.Title
@@ -125,7 +126,7 @@ const PlanPageOne = () => {
                 </section>
                 <Navigation />
             </Container>
-            <Req activeId={ activeId } />
+            {/* <Req activeId={ activeId } /> */}
         </ModalContainer>
     )
 };

@@ -15,13 +15,16 @@ export const getAllData = createAsyncThunk(
 export const dataInfoSlice = createSlice({
     name: 'dataInfo',
     initialState: {
+      id: null,
       dataSet: [],
       status: null,
       error: null,
     },
-    // reducers: {
-    //     refresh: (state, action) => state.dataSet = action.payload
-    // },
+    reducers: {
+      refreshActive(state, action) {
+        state.id = action.payload;
+      },
+    },
     extraReducers: {
       [getAllData.pending]: (state) => {
         state.status = 'loading';
@@ -37,5 +40,7 @@ export const dataInfoSlice = createSlice({
       },
     },
 });
+
+export const { refreshActive } = dataInfoSlice.actions;
   
 

@@ -11,6 +11,7 @@ const ModalLayout = () => {
             <Header />
             <div className='d-flex'>
                 <Outlet />
+                <Req />
             </div>
         </div>
     )

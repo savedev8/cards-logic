@@ -4,13 +4,15 @@ import './Req.scss'
 
 const Req = ({ activeId }) => {
     const [balance, setBalance] = useState(750.00);
+    const {id, dataSet} = useSelector((state) => state.dataInfo);
+    console.log(id);
     const [ req, setReq ] = useState({id: null, name: 'План не выбран', itemCost: '$0', minItems: '0 слотов', cost: '$0.00', e: '$750.00'});
     console.log(req);
-    const { dataSet } = useSelector((state) => state.dataInfo)
+
     useEffect(() => {
-        dataSet.map(item => item.id === activeId  ? setReq(item) : null);
-        console.log(activeId);
-    })
+        dataSet.map((item) => item.id === id ? setReq(item) : req);
+    }, []);
+
     return (
         <section className='request'>
             <h3 className='plan-title'>Ваш запрос</h3>

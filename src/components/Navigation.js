@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, ProgressBar } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 // import './Navigation.scss'
 
@@ -15,9 +15,7 @@ function Navigation() {
                     Шаг 1/3
                     <span>Оплата</span>
                 </div>
-                <div className='plan-line'>
-                    <progress max='100' value='33'></progress>
-                </div>
+                    <ProgressBar animated variant="primary" now={30} />
             </div>
         </section>
     )
