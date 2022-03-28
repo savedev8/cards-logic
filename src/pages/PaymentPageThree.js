@@ -1,6 +1,7 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-// import './Payment.scss'
+import './Payment.scss'
 import { ModalContainer } from './PlanPageOne'
 
 const PaymentPageThree = () => {
@@ -40,8 +41,8 @@ const PaymentPageThree = () => {
                         </div>
 
                         <div className='payment-circle'>
-                            <input type='radio' id='qiwi' name='qiwi' />
-                            <img src='./img/qiwi.svg' alt='qiwi' />
+                            <Button type='radio' id='qiwi' name='qiwi' />
+                            {/* <img src='./img/qiwi.svg' alt='qiwi' /> */}
                             <label for='qiwi'>
                                 <span></span>Яндекс.Деньги
                             </label>
@@ -64,7 +65,7 @@ const PaymentPageThree = () => {
                         </div>
                     </div>
 
-                    <section className='payment-navigation'>
+                    {/* <section className='payment-navigation'>
                         <div className='payment-button'>
                             <Link to='/finished'>Продолжить</Link>
                         </div>
@@ -80,7 +81,7 @@ const PaymentPageThree = () => {
                                 <progress max='100' value='66'></progress>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </section>
             </ModalContainer>
         </>

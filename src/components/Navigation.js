@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, ProgressBar } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 // import './Navigation.scss'
+import '../pages/Plan.scss';
 
 function Navigation() {
     return (
