@@ -1,4 +1,6 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Requests.scss'
 
 const Requests = () => {
@@ -23,9 +25,7 @@ const Requests = () => {
                     Ваш баланс:
                     <span>$2475.00</span>
                 </p>
-                <div className='request-button'>
-                    <a href='#header'>Запросить</a>
-                </div>
+                <Button as={Link} to='#header' className='modal__button'>Запросить</Button>
             </div>
         </section>
     )

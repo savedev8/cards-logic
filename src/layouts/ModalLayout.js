@@ -7,8 +7,10 @@ const ModalLayout = () => {
     return (
         <div className='modal__open'>
             <Header />
+            <div className='d-flex'>
                 <Outlet />
                 <Req />
+                </div>
         </div>
     )
 };

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './Req.scss'
 
 const Req = () => {
@@ -34,9 +36,8 @@ const Req = () => {
                     Ваш баланс:
                     <span>${balance}</span>
                 </p>
-                <div className='modal__button'>
-                    <a href='#header'>Запросить</a>
-                </div>
+
+                <Button as={Link} to='#header' className='modal__button'>Запросить</Button>
                 </div>
             </div>
         </section>

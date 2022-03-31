@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { Button, Card, CardGroup, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllData, refreshActive } from '../store/slices/dataSlice';
+import Navigation from './../components/Navigation';
 
 export const ModalContainer = styled.div`
     width: 630px;
@@ -122,6 +123,7 @@ const PlanPageOne = () => {
                         )} */}
                     </div>
                 </section>
+            <Navigation />
             </Container>
         </ModalContainer>
     )
