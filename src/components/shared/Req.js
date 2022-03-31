@@ -34,7 +34,7 @@ const Req = () => {
                     Ваш баланс:
                     <span>${balance}</span>
                 </p>
-                <div className='request-button'>
+                <div className='modal__button'>
                     <a href='#header'>Запросить</a>
                 </div>
                 </div>

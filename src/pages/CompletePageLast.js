@@ -1,5 +1,7 @@
 import React from 'react'
-// import './Complete.scss'
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Complete.scss'
 
 const CompletePageLast = () => {
     return (
@@ -30,11 +32,10 @@ const CompletePageLast = () => {
                         Итого:<span>$1015.00</span>
                     </p>
                 </div>
+            <Button as={Link} to='/' className='modal__button'>Перейти к запросу</Button>
             </section>
 
-            <div className='complete-button'>
-                <a href='/'>Перейти к запросу</a>
-            </div>
+            
         </section>
     )
 }

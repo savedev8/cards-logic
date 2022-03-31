@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 // import './Payment.scss'
 import { ModalContainer } from './PlanPageOne'
@@ -65,12 +66,13 @@ const PaymentPageThree = () => {
                     </div>
 
                     <section className='payment-navigation'>
-                        <div className='payment-button'>
-                            <Link to='/finished'>Продолжить</Link>
-                        </div>
+
+                    <Button as={Link} to='/finished' className='modal__button'>Продолжить</Button>
+
                         <div className='payment-return'>
                             <Link to='/subscribe'>Вернуться назад</Link>
                         </div>
+                        
                         <div className='payment-progress'>
                             <div className='payment-progress__title'>
                                 Шаг 2/3

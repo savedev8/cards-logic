@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import { ModalContainer } from './PlanPageOne'
 // import './Subscribe.scss'
@@ -27,12 +28,13 @@ const SubscribePageTwo = () => {
                 </section>
 
                 <section className='subscribe-navigation'>
-                    <div className='subscribe-button'>
-                        <Link to='/payment'>Продолжить</Link>
-                    </div>
+                  
+                    <Button as={Link} to='/payment' className='modal__button'>Продолжить</Button>
+
                     <div className='subscribe-return'>
                         <Link to='/'>Вернуться назад</Link>
                     </div>
+
                     <div className='subscribe-progress'>
                         <div className='subscribe-progress__title'>
                             Шаг 2/3
