@@ -3,7 +3,6 @@ import './Plan.scss'
 
 import styled from 'styled-components'
 import { Button, Card, CardGroup, Container } from 'react-bootstrap'
-import Navigation from '../components/Navigation'
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllData, refreshActive } from '../store/slices/dataSlice';
 
@@ -123,7 +122,6 @@ const PlanPageOne = () => {
                         )} */}
                     </div>
                 </section>
-                <Navigation />
             </Container>
         </ModalContainer>
     )

@@ -1,20 +1,27 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import { ModalContainer } from './PlanPageOne'
-// import './Subscribe.scss'
+import './Subscribe.scss'
 
 const SubscribePageTwo = () => {
     return (
         <ModalContainer>
             <section className='subscribe-inner'>
-                <h3 className='subscribe-title'>Срок подачи</h3>
-                <section className='subscribe-data'>
+                <h3 className='plan-title'>Срок подачи</h3>
+                <Form.Select className='subscribe-menu'>
+                    <option>1 месяц - 2475$</option>
+                    <option>2 месяца - 4455$<span>-10%</span></option>
+                    <option>3 месяца - 5940$<span>-20%</span></option>
+                    <option>4 месяца - 6930$<span>-30%</span></option>
+                </Form.Select>
+                {/* <section className='subscribe-data'>
                     <input placeholder='1 месяц' type='text' />
                     <img src='img/arrow-up.svg' alt='arrow-up' />
-                </section>
+                </section> */}
 
-                <section className='subscribe-menu'>
+                {/* <section className='subscribe-menu'>
                     <div>1 месяц - 2475$</div>
                     <div>
                         2 месяца - 4455$<span>-10%</span>
@@ -25,10 +32,9 @@ const SubscribePageTwo = () => {
                     <div>
                         4 месяца - 6930$<span>-30%</span>
                     </div>
-                </section>
+                </section>  */}
 
                 <section className='subscribe-navigation'>
-                  
                     <Button as={Link} to='/payment' className='modal__button'>Продолжить</Button>
 
                     <div className='subscribe-return'>
@@ -44,7 +50,10 @@ const SubscribePageTwo = () => {
                             <progress max='100' value='33'></progress>
                         </div>
                     </div>
-                </section>
+                </section> 
+                <div className='subscribe-button'>
+                        <Link to='/payment'>Продолжить</Link>
+                    </div>
             </section>
         </ModalContainer>
     )
