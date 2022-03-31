@@ -32,5 +32,25 @@ code {
     padding: 12px 20px;
 }
 
+.modal__return a {
+    text-decoration: none;
+    color: #205eff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.modal__return a::before {
+    content: '<';
+    margin-right: 3px;
+}
+
+.modal__title {
+    margin-top: 21px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #6773a0;
+}
+
 
 

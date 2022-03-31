@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const RequestSub = () => {
     return (
         <section className='request'>
-            <h3 className='request-title'>Ваш запрос</h3>
+            <h3 className='modal__title'>Ваш запрос</h3>
             <section className='request-info'>
                 <div className='request-info__items'>
                     <div className='request-info__item'>

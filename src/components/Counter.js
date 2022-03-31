@@ -11,7 +11,7 @@ export function Counter({ activeId }) {
     }
     return (
         <section className='plan-slots'>
-            <h3 className='plan-slots__title'>Количество слотов</h3>
+            <h3 className='modal__title'>Количество слотов</h3>
             {data.map((item) => (
                 <div
                     id='counter'

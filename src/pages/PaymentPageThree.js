@@ -9,7 +9,7 @@ const PaymentPageThree = () => {
         <>
             <ModalContainer>
                 <section className='payment-inner'>
-                    <h3 className='payment-title'>Пополнение</h3>
+                    <h3 className='modal__title'>Пополнение</h3>
                     <p className='payment-info'>Введите сумму</p>
                     <input
                         className='payment-input'
@@ -69,12 +69,12 @@ const PaymentPageThree = () => {
                     <Button as={Link} to='/finished' className='modal__button'>Продолжить</Button>
 
 
-                        <div className='payment-return'>
+                        <div className='modal__return'>
                             <Link to='/subscribe'>Вернуться назад</Link>
                         </div>
                         
                         <div className='payment-progress'>
-                            <div className='payment-progress__title'>
+                            <div className='payment-progress__'>
                                 Шаг 2/3
                                 <span>Оплата</span>
                             </div>

@@ -2,15 +2,6 @@
     &-inner {
         margin-left: 30px;
     }
-    &-title {
-        margin-top: 21px;
-        margin-bottom: 7px;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 800;
-        line-height: 17.5px;
-        color: #6773a0;
-    }
 
     &-data {
         input {
@@ -72,20 +63,7 @@
         margin-top: 90px;
     }
 
-    &-return {
-        margin-top: 1px;
-        a {
-            text-decoration: none;
-            color: #205eff;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 36px;
-            &::before {
-                content: '<';
-                margin-right: 3px;
-            }
-        }
-    }
+    
 
     &-progress {
         display: flex;

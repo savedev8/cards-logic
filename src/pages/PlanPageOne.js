@@ -42,7 +42,7 @@ const PlanPageOne = () => {
     return (
         <ModalContainer className='d-flex'>
             <Container className='plan-inner'>
-                <h3 className='plan-title'>План подписки</h3>
+                <h3 className='modal__title'>План подписки</h3>
 
                 <CardGroup className='card-items'>
                     {dataSet.map((item) => (
@@ -86,7 +86,7 @@ const PlanPageOne = () => {
                 </CardGroup>
 
                 <section className='plan-slots'>
-                    <h3 className='plan-title'>Количество слотов</h3>
+                    <h3 className='modal__title'>Количество слотов</h3>
                     <div className='plan-in'>
                         <div className='plan-number'>
                             <div className='plan-number__text'>{count}</div>

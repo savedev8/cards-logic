@@ -9,7 +9,7 @@ const SubscribePageTwo = () => {
     return (
         <ModalContainer>
             <section className='subscribe-inner'>
-                <h3 className='plan-title'>Срок подачи</h3>
+                <h3 className='modal__title'>Срок подачи</h3>
                 <Form.Select className='subscribe-menu'>
                     <option>1 месяц - 2475$</option>
                     <option>2 месяца - 4455$<span>-10%</span></option>
@@ -37,7 +37,7 @@ const SubscribePageTwo = () => {
                 <section className='subscribe-navigation'>
                     <Button as={Link} to='/payment' className='modal__button'>Продолжить</Button>
 
-                    <div className='subscribe-return'>
+                    <div className='modal__return'>
                         <Link to='/'>Вернуться назад</Link>
                     </div>
 
@@ -51,9 +51,6 @@ const SubscribePageTwo = () => {
                         </div>
                     </div>
                 </section> 
-                <div className='subscribe-button'>
-                        <Link to='/payment'>Продолжить</Link>
-                    </div>
             </section>
         </ModalContainer>
     )
