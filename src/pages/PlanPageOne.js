@@ -31,7 +31,7 @@ const PlanPageOne = () => {
     useEffect(() => {
         dataSet.map((item) => {
             return activeId !== item.id && count <= item.minItems
-                ? setAble(true) && setText('counter__alert') && setBorder('red')
+                ? setAble(true) && setText('counter__alert') && setBorder('counter__number red')
                 : setAble(false) && setText('d-none') && setBorder('counter__number')
         })
     })
