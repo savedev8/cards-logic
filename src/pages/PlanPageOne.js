@@ -85,28 +85,30 @@ const PlanPageOne = () => {
                     ))}
                 </CardGroup>
 
-                <section className='plan-slots'>
+                <section className='counter'>
                     <h3 className='modal__title'>Количество слотов</h3>
-                    <div className='plan-in'>
-                        <div className='plan-number'>
-                            <div className='plan-number__text'>{count}</div>
+                    <div className='counter__in'>
+                        <div className='counter__number'>
+                            <div className='counter__text'>{count}</div>
                             {/* {data.map((item, id) => ( */}
-                                <div className='plan-number__controls'>
+                                <div className='counter__buttons'>
                                     <Button
-                                        className='plan-number__plus'
+                                        className='plus'
+                                        variant=''
                                         onClick={handleIncrement}>
                                         +
                                     </Button>
                                     <Button
-                                        className='plan-number__minus'
+                                        className='minus'
+                                        variant=''
                                         disabled={able}
                                         onClick={(e) => {
                                             handleDecrement()
                                             activeId 
                                             //  &&
                                             // count < item.minItems
-                                                ? setText('plan-text')
-                                                : setText('plan-none')
+                                                ? setText('counter__text')
+                                                : setText('counter__none')
                                         }}>
                                         -
                                     </Button>

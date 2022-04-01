@@ -62,6 +62,7 @@
         margin-left: 30px;
     }
 
+
     &-progress {
         display: flex;
         flex-direction: column;
@@ -95,70 +96,52 @@
     // }
 }
 
-
-
-// .block {
-//     display: block;
-// }
-
 .border-block {
     border: 1px solid #ec5a75;
 }
 
-// .plan {
-//     &-slots {
-//         margin-bottom: 48px;
-//         a {
-//             text-decoration: none;
-//         }
-//     }
+.counter {
+    margin-bottom: 48px;
+    &__in {
+        display: flex;
+    }
+    &__number {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        height: 42px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #969BAE;
+    }
 
-//     &-number {
-//         display: inline-block;
-//         user-select: none;
-//         position: relative;
-//         text-align: left;
-//         padding: 0;
-//         width: 79px;
-//         border: 1px solid #ddd;
-//         height: 42px;
-//         border-radius: 4px;
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -1px 15px 0 0;
+    }
 
-//     }
-
-//     &-number__controls {
-//         position: absolute;
-//         top: 2px;
-//         right: 0px;
-//         width: 30px;
-//     }
-
-//     &-number__minus {
-//         display: block;
-//         color: #969BAE;
-//         border: none;
-//         background-color: #fff;
-//         margin-left: -3px;
-//         padding-left: 10px;
-//         font-size: 18px;
-//     }
-//     &-number__plus {
-//         display: block;
-//         color: #969BAE;
-//         border: none;
-//         background-color: #fff;
-//     }
-
-//     &-number__text {
-//         display: flex;
-//         font-size: 13px;
-//         font-weight: 500;
-//         line-height: 16.25px;
-//         color: #969BAE;
-//         margin-top: 12px;
-//         margin-left: 20px;
-//         width: 49px;
-//         height: 42px;
-//         position: absolute;
-//     }
-// }
+    .minus,
+    .plus {
+        color: #969BAE;
+        padding: 0;
+        height: 20px;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            color: #205eff;
+        }
+    }
+    &__none {
+        display: none;
+    }
+}
