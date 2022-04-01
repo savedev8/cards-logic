@@ -24,16 +24,17 @@ const PlanPageOne = () => {
     const handleDecrement = () => {
         setCount((prevCount) => prevCount - 1)
     }
-    const [text, setText] = useState('plan-none')
-    const [able, setAble] = useState(false)
+    const [text, setText] = useState('d-none');
+    const [border, setBorder] = useState('counter__number');
+    const [able, setAble] = useState(false);
     
-    // useEffect(() => {
-    //     data.map((item) => {
-    //         return activeId !== item.id && count <= item.minItems
-    //             ? setAble(true) && setText('plan-text')
-    //             : setAble(false) && setText('d-none')
-    //     })
-    // })
+    useEffect(() => {
+        dataSet.map((item) => {
+            return activeId !== item.id && count <= item.minItems
+                ? setAble(true) && setText('counter__alert') && setBorder('red')
+                : setAble(false) && setText('d-none') && setBorder('counter__number')
+        })
+    })
 
     useEffect(() => {
         dispatch(getAllData());
@@ -54,7 +55,6 @@ const PlanPageOne = () => {
                             onClick={(e) => {
                                 setActiveId(item.id)
                                 dispatch(refreshActive(item.id));
-                                // dispatch(refreshActive(item.minItems));
                                 setCount(Number(item.minItems))
                             }}>
                             <Card.Title
@@ -88,9 +88,11 @@ const PlanPageOne = () => {
                 <section className='counter'>
                     <h3 className='modal__title'>Количество слотов</h3>
                     <div className='counter__in'>
-                        <div className='counter__number'>
+                        <div className={`${border}`} 
+                        // style={{ border: `1px solid ${border}`}}
+                        >
                             <div className='counter__text'>{count}</div>
-                            {/* {data.map((item, id) => ( */}
+                            {dataSet.map((item, id) => (
                                 <div className='counter__buttons'>
                                     <Button
                                         className='plus'
@@ -105,24 +107,24 @@ const PlanPageOne = () => {
                                         onClick={(e) => {
                                             handleDecrement()
                                             activeId 
-                                            //  &&
-                                            // count < item.minItems
-                                                ? setText('counter__text')
-                                                : setText('counter__none')
+                                             &&
+                                            count < item.minItems
+                                                ? setText('counter__alert')
+                                                : setText('d-none')
                                         }}>
                                         -
                                     </Button>
                                 </div>
-                            {/* ))} */}
+                            ))}
                         </div>
-                        {/* {data.map((item) =>
-                            activeId === item.id ? (
+                        {/* {dataSet.map((item) => */}
+                           {/*   activeId === item.id ? (*/}
                                 <div className={`${text}`}>
                                     Для оформления выбранного плана необходимо
-                                    более {item.minItems} слотов
+                                    более 10 слотов
                                 </div>
-                            ) : null
-                        )} */}
+                            {/* ) : null */}
+                        {/* )} */}
                     </div>
                 </section>
             <Navigation />
