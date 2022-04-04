@@ -64,7 +64,7 @@ const PaymentPageThree = () => {
                             </label>
                         </div>
                     </div>
-                    <section className='payment-navigation'>
+                    {/* <section className='payment-navigation'>
 
                     <Button as={Link} to='/finished' className='modal__button'>Продолжить</Button>
 
@@ -82,7 +82,7 @@ const PaymentPageThree = () => {
                                 <progress max='100' value='66'></progress>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </section>
             </ModalContainer>
         </>

@@ -1,4 +1,14 @@
-// .modal {
+.modal {
+    &__return {
+    text-decoration: none;
+    color: #205eff;
+    font-size: 12px;
+    font-weight: 600;
+        &::before {
+            content: '<';
+            margin-right: 3px;
+        }
+    }
+}
 
-// }
 

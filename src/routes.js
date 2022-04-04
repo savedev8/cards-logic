@@ -3,6 +3,7 @@ import PlanPageOne from "./pages/PlanPageOne";
 import SubscribePageTwo  from "./pages/SubscribePageTwo";
 import PaymentPageThree from "./pages/PaymentPageThree";
 import CompletePageLast  from "./pages/CompletePageLast";
+import { ModalFininshLayout } from "./layouts/ModalFinishLayout";
 
 const routes = [
     {
@@ -21,12 +22,17 @@ const routes = [
             path: "payment",
             element: <PaymentPageThree />
          },
-        {
-           path: "finished",
-           element: <CompletePageLast />
-        },
       ],
     },
-]
+    {
+      element: <ModalFininshLayout />,
+      children: [
+        {
+          path: 'finished',
+          element: <CompletePageLast />
+        },
+      ],
+    }
+];
 
 export default routes;

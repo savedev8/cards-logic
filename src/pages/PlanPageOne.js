@@ -127,7 +127,6 @@ const PlanPageOne = () => {
                         {/* )} */}
                     </div>
                 </section>
-            <Navigation />
             </Container>
         </ModalContainer>
     )
