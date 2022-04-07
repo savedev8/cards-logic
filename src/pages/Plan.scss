@@ -4,18 +4,25 @@
     border-radius: 4px;
     margin-right: 12px;
     border: 2px solid #cececf;
+
     &.active {
         border: 2px solid #205eff;
     }
-    
+
     .actives {
         color: #205eff;
     }
+
     &-items {
         display: flex;
         justify-content: space-between;
         max-width: 550px;
     }
+
+    &-inner {
+        margin-left: 30px;
+    }
+
     &-title {
         font-size: 15px;
         font-weight: 600;
@@ -25,8 +32,10 @@
         margin-bottom: 5px;
         margin-left: 12px;
     }
+
     &-info {
         margin-bottom: 10px;
+
         span {
             display: block;
             color: #969bae;
@@ -36,6 +45,7 @@
             margin-left: 12px;
         }
     }
+
     &-price {
         font-size: 21px;
         font-weight: 700;
@@ -43,12 +53,14 @@
         color: #969fbf;
         margin-bottom: 5px;
         margin-left: 12px;
+
         span {
             font-size: 12px;
             font-weight: 500;
             line-height: 15px;
         }
     }
+
     &-link {
         font-size: 11px;
         font-weight: 500;
@@ -57,50 +69,14 @@
         margin-left: 12px;
     }
 }
-.plan {
-    &-inner {
-        margin-left: 30px;
-    }
-
-
-    &-progress {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-    }
-    
-    &-navigation {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    // &-progress {
-    //     display: flex;
-    //     flex-direction: column;
-    //     margin-left: 250px;
-    //     margin-top: 0px;
-    // }
-
-    // &-progress__title {
-    //     font-size: 13px;
-    //     font-weight: 500;
-    //     line-height: 16.25px;
-    //     color: #76757e;
-    //     span {
-    //         font-size: 12px;
-    //         font-weight: 600;
-    //         line-height: 15px;
-    //         color: #2c3143;
-    //         float: right;
-    //     }
-    // }
-}
 
 .counter {
     margin-bottom: 48px;
+
     &__in {
         display: flex;
     }
+
     &__number {
         display: flex;
         justify-content: space-between;
@@ -108,10 +84,12 @@
         height: 42px;
         border-radius: 4px;
         border: 1px solid #ddd;
+
         &.red {
             border: 1px solid #ec5a75;
         }
     }
+
     &__text {
         display: flex;
         align-items: center;
@@ -133,15 +111,17 @@
         color: #969BAE;
         padding: 0;
         height: 20px;
+
         &:focus {
             box-shadow: none;
         }
+
         &:hover {
             color: #205eff;
         }
     }
 
-    &__alert{
+    &__alert {
         font-size: 12px;
         font-weight: 500;
         max-width: 300px;

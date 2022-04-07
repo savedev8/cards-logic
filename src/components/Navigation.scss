@@ -1,9 +1,11 @@
 .modal {
     &__return {
-    text-decoration: none;
-    color: #205eff;
-    font-size: 12px;
-    font-weight: 600;
+        display: flex;
+        align-items: center;
+        color: #205eff;
+        font-size: 12px;
+        font-weight: 600;
+
         &::before {
             content: '<';
             margin-right: 3px;
@@ -11,4 +13,30 @@
     }
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 0 10px;
 
+    &__progress {
+        flex-direction: column;
+    }
+
+    &__progress-title {
+        font-size: 13px;
+        font-weight: 500;
+        color: #76757e;
+
+        span {
+            font-size: 12px;
+            color: #2c3143;
+            float: right;
+        }
+    }
+
+    &__line {
+        width: 200px;
+        height: 8px;
+    }
+}

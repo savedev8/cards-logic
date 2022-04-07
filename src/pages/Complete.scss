@@ -2,6 +2,7 @@
     width: 877px;
     height: 415px;
     text-align: center;
+
     &-title {
         font-size: 18px;
         font-weight: 700;
@@ -24,48 +25,52 @@
         width: 209px;
         height: 149px;
         margin: 0 auto;
-            &__item {
-                font-size: 12px;
-                font-weight: 600;
-                line-height: 15px;
+
+        &__item {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+            color: #34324F;
+            text-align: start;
+
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                float: right;
                 color: #34324F;
-                text-align: start;
-                span {
-                    font-size: 14px;
-                    line-height: 16px;
-                    float: right; 
-                    color: #34324F;
-                    &.blue {
-                        color: #205EFF;
-                    }
-                }
-                
-                p {
-                    display: block;
-                    font-size: 11px;
-                    font-weight: 500;
-                    line-height: 13.75px;
-                    color: #9B99AE;
-                    margin-top: 3px;
+
+                &.blue {
+                    color: #205EFF;
                 }
             }
 
-            .request-price {
-                font-size: 12px;
+            p {
+                display: block;
+                font-size: 11px;
                 font-weight: 500;
-                line-height: 15px;
+                line-height: 13.75px;
                 color: #9B99AE;
-                float: right;
-                margin: 0;
-                span {
-                    margin-left: 3px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 17px;
-                    color: #34324F;
-                }
+                margin-top: 3px;
             }
         }
-            
-   
+
+        .request-price {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            color: #9B99AE;
+            float: right;
+            margin: 0;
+
+            span {
+                margin-left: 3px;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                color: #34324F;
+            }
+        }
+    }
+
+
 }

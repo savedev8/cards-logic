@@ -20,6 +20,7 @@
         border-radius: 4px;
         padding-right: 12px;
         position: relative;
+
         // &::before {
         //     content: url('dollar-sign.svg');
         //     top: 100px;
@@ -48,6 +49,7 @@
 
     &-circle {
         vertical-align: text-top;
+
         label {
             align-self: start;
             display: inline-block;
@@ -68,32 +70,6 @@
             position: relative;
             left: 10px;
             top: 2px;
-        }
-    }
-
-    &-navigation {
-        display: flex;
-        margin-top: 90px;
-    }
-
-    &-progress {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-        margin-top: 0px;
-    }
-
-    &-progress__title {
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 16.25px;
-        color: #76757e;
-        span {
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 15px;
-            color: #2c3143;
-            float: right;
         }
     }
 }

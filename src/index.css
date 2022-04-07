@@ -16,9 +16,6 @@ code {
 
 .modal__open {
     max-width: 878px;
-    /* width: 100%; */
-    min-height: 477px;
-    height: 100%;
     margin: 20px auto;
     background-color: #fff;
     border-radius: 6px;

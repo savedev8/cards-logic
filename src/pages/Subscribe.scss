@@ -12,6 +12,7 @@
             position: relative;
             padding: 0;
             margin: 0;
+
             &::placeholder {
                 padding-left: 15px;
                 font-family: 'Montserrat', sans-serif;
@@ -37,6 +38,7 @@
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
         margin-top: 5px;
         margin-bottom: 115px;
+
         div {
             font-size: 13px;
             font-weight: 500;
@@ -45,6 +47,7 @@
             padding-left: 15px;
             margin-top: 0px;
         }
+
         span {
             color: #2359e8;
             font-size: 11px;
@@ -55,34 +58,6 @@
             border-radius: 4px;
             padding-left: 3px;
             padding-right: 3px;
-        }
-    }
-
-    &-navigation {
-        display: flex;
-        margin-top: 90px;
-    }
-
-    
-
-    &-progress {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-        margin-top: 0px;
-    }
-
-    &-progress__title {
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 16.25px;
-        color: #76757e;
-        span {
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 15px;
-            color: #2c3143;
-            float: right;
         }
     }
 }
