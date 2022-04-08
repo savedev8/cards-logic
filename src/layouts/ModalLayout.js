@@ -22,10 +22,8 @@ const ModalLayout = () => {
             <Header />
             <div className='d-flex justify-content-around'>
                 <ModalContainer>
-                    {/* <div className=''> */}
                         <Outlet />
                         <Navigation />
-                    {/* </div> */}
                 </ModalContainer>
                 {location.pathname.includes('/finished') ? null : <Req />}
             </div>

@@ -1,75 +1,68 @@
 .request {
-    // margin-left: 50px !important;
-    margin-right: 22px;
+    width: 209px;
+    margin: 0 22px 0;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        height: 370px;
+    }
+
+    &__info-item {
+        font-size: 12px;
+        font-weight: 600;
+
+        p {
+            font-size: 11px;
+            font-weight: 500;
+            color: #9B99AE;
+            margin-top: 3px;
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 16px;
+            float: right;
+            color: #34324F;
+
+            &.blue {
+                color: #205EFF;
+            }
+        }
+    }
+
     &-price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         font-size: 12px;
         font-weight: 500;
-        line-height: 15px;
         color: #9B99AE;
-        float: right;
-        margin-top: 220px;
+
         span {
             margin-left: 3px;
             font-size: 16px;
             font-weight: 700;
-            line-height: 17px;
             color: #34324F;
-        }
-    }
-
-    &-balance {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 150px;
-        span {
-            display: block;
         }
     }
 
     &-score {
+        display: flex;
+        flex-direction: column;
+
         font-size: 12px;
         font-weight: 500;
-        line-height: 15px;
         color: #9B99AE;
-        margin-top: 0;
         margin-bottom: 0;
+
         span {
             font-size: 14px;
             font-weight: 600;
-            line-height: 17.5px;
             color: #34324F;
-            text-align: right;
-        }
-    }
-
-    &-info {
-        width: 209px;
-        height: 149px;
-        
-        &__item {
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 15px;
-            color: #34324F;
-            text-align: start;
-            span {
-                font-size: 14px;
-                line-height: 16px;
-                float: right; 
-                color: #34324F;
-                &.blue {
-                    color: #205EFF;
-                }
-            }
-            
-            p {
-                display: block;
-                font-size: 11px;
-                font-weight: 500;
-                line-height: 13.75px;
-                color: #9B99AE;
-                margin-top: 3px;
-            }
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }
