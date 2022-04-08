@@ -12,26 +12,24 @@ const CompletePageLast = () => {
                 аккаунты из раздела «Подписка»
             </section>
 
-            <section className='request-info'>
-                <div className='request-info__items'>
-                    <div className='request-info__item'>
+            <section className='request__info'>
+                    <div className='request__info-item'>
                         План «Стандарт+» <span>$2475.00</span>
                         <p>15 слотов</p>
                     </div>
 
-                    <div className='request-info__item'>
+                    <div className='request__info-item'>
                         Срок подписки<span>x3</span>
                         <p>3 месяца</p>
                     </div>
 
-                    <div className='request-info__item'>
+                    <div className='request__info-item'>
                         Скидка <span className='blue'>-20%</span>
                         <p>на подписку</p>
                     </div>
                     <p className='request-price'>
                         Итого:<span>$1015.00</span>
                     </p>
-                </div>
                 <Button as={Link} to='/' className='modal__button'>Перейти к запросу</Button>
             </section>
 

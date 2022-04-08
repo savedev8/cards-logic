@@ -1,4 +1,4 @@
-export const path = [{
+const path = [{
     name: '/',
     next: 'subscribe',
     prev: '',
@@ -20,3 +20,5 @@ export const path = [{
     progress: 66,
 }
 ];
+
+export default path;
