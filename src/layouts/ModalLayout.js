@@ -10,6 +10,9 @@ const ModalContainer = styled.div`
     width: 630px;
     height: 416px;
     border-right: 1px solid #ebecff;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 `;
 
 const ModalLayout = () => {
@@ -17,12 +20,12 @@ const ModalLayout = () => {
     return (
         <div className='modal__open'>
             <Header />
-            <div className='d-flex'>
+            <div className='d-flex justify-content-around'>
                 <ModalContainer>
-                    <div className=''>
+                    {/* <div className=''> */}
                         <Outlet />
                         <Navigation />
-                    </div>
+                    {/* </div> */}
                 </ModalContainer>
                 {location.pathname.includes('/finished') ? null : <Req />}
             </div>

@@ -3,7 +3,7 @@ import { Button, ProgressBar } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import './Navigation.scss';
 import '../pages/Plan.scss';
-import { path } from '../apps';
+import path from '../apps.js';
 
 function Navigation() {
     const location = useLocation();
