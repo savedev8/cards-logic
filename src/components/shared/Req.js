@@ -27,6 +27,7 @@ const Req = () => {
     useEffect(() => {
         dataSet.map((item) => item.id === id ? setReq(item) : req);
     });
+    const { cost, minItems, itemCost, name } = req;
 
     return (
         <section className='request'>
@@ -34,8 +35,8 @@ const Req = () => {
             <section className='request__inner'>
             <section className='request__info'>
                 <div className='request__info-item'>
-                    {req.name} <span>{req.itemCost}</span>
-                    <p>{req.minItems}</p>
+                    {name} <span>${(Number(itemCost.slice(1)) + Number(cost.slice(1))) * Number(minItems)}</span>
+                    <p>{req.minItems} слотов</p>
                 </div>
 
                 <div className='request__info-item'>
