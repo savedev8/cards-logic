@@ -3,6 +3,7 @@ import PlanPageOne from "./pages/PlanPageOne";
 import SubscribePageTwo  from "./pages/SubscribePageTwo";
 import PaymentPageThree from "./pages/PaymentPageThree";
 import CompletePageLast  from "./pages/CompletePageLast";
+import RequestSub  from "./components/shared/RequestSub";
 import { ModalFininshLayout } from "./layouts/ModalFinishLayout";
 
 const routes = [
@@ -22,6 +23,10 @@ const routes = [
             path: "payment",
             element: <PaymentPageThree />
          },
+         {
+          path: "requests",
+          element: <RequestSub />
+       },
       ],
     },
     {

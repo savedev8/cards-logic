@@ -1,76 +1,30 @@
 .complete {
-    width: 877px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 415px;
+    padding-top: 30px;
     text-align: center;
 
     &-title {
         font-size: 18px;
         font-weight: 700;
-        line-height: 22.5px;
         color: #205EFF;
-        margin-bottom: 4px;
     }
 
     &-info {
-        max-width: 452px;
-        margin: 0 auto;
+        max-width: 450px;
+        margin: 5px auto 20px;
         font-size: 12px;
         font-weight: 500;
-        line-height: 15px;
         color: #969BAE;
-        margin-bottom: 21px;
     }
 
     .request-info {
-        width: 209px;
-        height: 149px;
         margin: 0 auto;
 
-        &__item {
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 15px;
-            color: #34324F;
-            text-align: start;
-
-            span {
-                font-size: 14px;
-                line-height: 16px;
-                float: right;
-                color: #34324F;
-
-                &.blue {
-                    color: #205EFF;
-                }
-            }
-
-            p {
-                display: block;
-                font-size: 11px;
-                font-weight: 500;
-                line-height: 13.75px;
-                color: #9B99AE;
-                margin-top: 3px;
-            }
-        }
-
         .request-price {
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 15px;
-            color: #9B99AE;
-            float: right;
-            margin: 0;
-
-            span {
-                margin-left: 3px;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 17px;
-                color: #34324F;
-            }
+            margin: 20px;
         }
     }
-
-
 }

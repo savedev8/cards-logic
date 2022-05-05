@@ -6,9 +6,7 @@ export const ModalFininshLayout = () => {
     return (
         <div className='modal__open'>
             <Header />
-            <div className='d-flex'>
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     );
 };
